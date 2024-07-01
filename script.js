@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:  "Eu separo e reciclo o lixo que produzo em casa sempre que possível.",
-                afirmacao: "afirmacao"
+                afirmacao: "Incrível!, separar o lixo produzido em casa é uma pratica essencial para a sustentabilidade ambiental, saiba que você etá ajudando muito o meio ambiente."
             },
             {
                 texto:"Eu raramente ou nunca separo o lixo que produzo.",
-                afirmacao: "afirmacao"
+                afirmacao: "É importante que você separe o lixo que produz, pois isso contribui significativamente para a perservação do meio ambiente. Espero que você comece a fazer essa separação a partir de agora, pois cada pequena ação faz uma grande diferença."
             },
         ]
     },
@@ -23,11 +23,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:"O certo é reduzir o uso do plástico.",
-                afirmacao: "afirmacao"
+                afirmacao: "Muito bem!, a redução do uso do plástico é essencial para minimizar os impactos ambientais negativos e promover a sustentabilidade."
             },
             {
                 texto:"Reduzir o uso do papel é mais importante.",
-                afirmacao:"afirmacao"
+                afirmacao:"Reduzir o uso de papel é uma iniciativa válida e benéfica, mas é importante destacar que a redução do uso de plástico é ainda mais essencial para a preservação do meio ambiente devido ao seu impacto duradouro e nocivo nos ecossistemas."
             }
         ]
     },
@@ -36,11 +36,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:"Acredito que a reciclagem seja eficaz.",
-                afirmacao:"afirmacao"
+                afirmacao:"Exatamente, a prática da reciclagem é realmente muito importante, pois contribui significativamente para a redução de resíduos, a conservação de recursos naturais e a proteção do meio ambiente."
             },
             {
                 texto:"não acho que seja eficaz.",
-                afirmacao: "afirmacao"
+                afirmacao: "Na verdade, a reclagem é muito eficaz e importante, pois ajuda a reduzir a quantidade de resíduos nos aterros, economiza recursos naturais e diminui a poluição ambiental."
             }
         ]
     },
@@ -49,11 +49,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:"Considero o aquecimento global uma ameaça real ao nosso planeta.",
-                afirmacao:"afirmacao"
+                afirmacao:"Sim, o aquecimento global é uma ameaça real ao nosso planeta porque ele causa elevação do nível do mar, eventos climáticos extremos e perda de biodiversidade."
             },
             {
                 texto:"Acho que a gravidade da situação é exagerada.",
-                afirmacao:"afirmacao"
+                afirmacao:"Na verdade, o aquecimento global é muito preocupante, pois está acelerando eventos climáticos extremos e afetando ecossistemas vitais para a vida na terra."
             }
         ]
     },
@@ -62,11 +62,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:"É mais importante focar na proteção dos oceanos.",
-                afirmacao:"afirmacao"
+                afirmacao:"Ambos são igualmente importantes, pois os oceanos regulam o clima e produzem oxigênio, enquanto as florestas armazenam carbono e abrigam biodiversidade essencial."
             },
             {
                 texto:"Melhor focas apenas nas florestas.",
-                afirmacao:"afirmacao"
+                afirmacao:"Ambos são igualmente importantes, pois os oceanos regulam o clima e produzem oxigênio, enquanto as florestas armazenam carbono e abrigam biodiversidade essencial."
             }
             
             
@@ -82,7 +82,7 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-    if(atual >= perguntas.length){
+    if (atual >= perguntas.length) {
         mostraResultado();
         return;
     }
@@ -93,7 +93,7 @@ function mostraPergunta() {
 }
 
 function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas){
+    for(const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
@@ -102,7 +102,7 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSeleconada){
-    const afirmacoes = opcaoSeleconada.afirmacoes;
+    const afirmacoes = opcaoSeleconada.afirmacao;
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
