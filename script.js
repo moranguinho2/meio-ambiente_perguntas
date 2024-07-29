@@ -10,11 +10,17 @@ const perguntas = [
         alternativas: [
             {
                 texto:  "Eu separo e reciclo o lixo que produzo em casa sempre que possível.",
-                afirmacao: "Incrível!, separar o lixo produzido em casa é uma pratica essencial para a sustentabilidade ambiental, saiba que você etá ajudando muito o meio ambiente."
+                afirmacao:  [
+                "Incrível!, separar o lixo produzido em casa é uma pratica essencial para a sustentabilidade ambiental, saiba que você etá ajudando muito o meio ambiente.", 
+                "Fico muito feliz em saber disso, continue reciclando para ajudar o nosso planeta"
+                ]
             },
             {
                 texto:"Eu raramente ou nunca separo o lixo que produzo.",
-                afirmacao: "É importante que você separe o lixo que produz, pois isso contribui significativamente para a perservação do meio ambiente. Espero que você comece a fazer essa separação a partir de agora, pois cada pequena ação faz uma grande diferença."
+                afirmacao: [
+                "É importante que você separe o lixo que produz, pois isso contribui significativamente para a perservação do meio ambiente. Espero que você comece a fazer essa separação a partir de agora, pois cada pequena ação faz uma grande diferença.", 
+                "Espero que este projeto sirva como um aviso para que você possa começar a reciclar o lixo que produz, a mudança começa por você"
+                ]
             },
         ]
     },
@@ -23,11 +29,17 @@ const perguntas = [
         alternativas: [
             {
                 texto:"O certo é reduzir o uso do plástico.",
-                afirmacao: "Muito bem!, a redução do uso do plástico é essencial para minimizar os impactos ambientais negativos e promover a sustentabilidade."
+                afirmacao: [
+                 "Muito bem!, a redução do uso do plástico é essencial para minimizar os impactos ambientais negativos e promover a sustentabilidade.",
+                 "É mais estratégico diminuir o uso do plástico para diminuir os impactos ambientais."
+                ]
             },
             {
                 texto:"Reduzir o uso do papel é mais importante.",
-                afirmacao:"Reduzir o uso de papel é uma iniciativa válida e benéfica, mas é importante destacar que a redução do uso de plástico é ainda mais essencial para a preservação do meio ambiente devido ao seu impacto duradouro e nocivo nos ecossistemas."
+                afirmacao: [
+                "Reduzir o uso de papel é uma iniciativa válida e benéfica, mas é importante destacar que a redução do uso de plástico é ainda mais essencial para a preservação do meio ambiente devido ao seu impacto duradouro e nocivo nos ecossistemas.",
+                "Por mais que a redução de papel fosse ajudar a protejer o meio ambiente, diminuir o uso do plástico seria mais significativo para o meio ambiente"
+                ]
             }
         ]
     },
