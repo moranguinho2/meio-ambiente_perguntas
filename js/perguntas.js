@@ -7,14 +7,17 @@ export const perguntas = [
                 afirmacao:  [
                 "Incrível!, separar o lixo produzido em casa é uma pratica essencial para a sustentabilidade ambiental, saiba que você etá ajudando muito o meio ambiente.", 
                 "Fico muito feliz em saber disso, continue reciclando para ajudar o nosso planeta"
-                ]
+                ],
+                proxima: 1,
+
             },
             {
                 texto:"Eu raramente ou nunca separo o lixo que produzo.",
                 afirmacao: [
                 "É importante que você separe o lixo que produz, pois isso contribui significativamente para a perservação do meio ambiente. Espero que você comece a fazer essa separação a partir de agora, pois cada pequena ação faz uma grande diferença.", 
                 "Espero que este projeto sirva como um aviso para que você possa começar a reciclar o lixo que produz, a mudança começa por você"
-                ]
+                ],
+                proxima: 2,
             },
         ]
     },
@@ -26,14 +29,16 @@ export const perguntas = [
                 afirmacao: [
                  "Muito bem!, a redução do uso do plástico é essencial para minimizar os impactos ambientais negativos e promover a sustentabilidade.",
                  "É mais estratégico diminuir o uso do plástico para diminuir os impactos ambientais."
-                ]
+                ],
+                proxima: 7,
             },
             {
                 texto:"Reduzir o uso do papel é mais importante.",
                 afirmacao: [
                 "Reduzir o uso de papel é uma iniciativa válida e benéfica, mas é importante destacar que a redução do uso de plástico é ainda mais essencial para a preservação do meio ambiente devido ao seu impacto duradouro e nocivo nos ecossistemas.",
                 "Por mais que a redução de papel fosse ajudar a protejer o meio ambiente, diminuir o uso do plástico seria mais significativo para o meio ambiente"
-                ]
+                ],
+                proxima: 7,
             }
         ]
     },
@@ -42,11 +47,17 @@ export const perguntas = [
         alternativas: [
             {
                 texto:"Acredito que a reciclagem seja eficaz.",
-                afirmacao:"Exatamente, a prática da reciclagem é realmente muito importante, pois contribui significativamente para a redução de resíduos, a conservação de recursos naturais e a proteção do meio ambiente."
+                afirmacao:[
+                "Exatamente, a prática da reciclagem é realmente muito importante, pois contribui significativamente para a redução de resíduos, a conservação de recursos naturais e a proteção do meio ambiente."
+             ],
+             proxima: 7,
             },
             {
                 texto:"não acho que seja eficaz.",
-                afirmacao: "Na verdade, a reclagem é muito eficaz e importante, pois ajuda a reduzir a quantidade de resíduos nos aterros, economiza recursos naturais e diminui a poluição ambiental."
+                afirmacao: [
+                "Na verdade, a reclagem é muito eficaz e importante, pois ajuda a reduzir a quantidade de resíduos nos aterros, economiza recursos naturais e diminui a poluição ambiental."
+                ],
+                proxima: 7,
             }
         ]
     },
@@ -55,11 +66,17 @@ export const perguntas = [
         alternativas: [
             {
                 texto:"Considero o aquecimento global uma ameaça real ao nosso planeta.",
-                afirmacao:"Sim, o aquecimento global é uma ameaça real ao nosso planeta porque ele causa elevação do nível do mar, eventos climáticos extremos e perda de biodiversidade."
+                afirmacao:[
+                "Sim, o aquecimento global é uma ameaça real ao nosso planeta porque ele causa elevação do nível do mar, eventos climáticos extremos e perda de biodiversidade."
+                ],
+                proxima: 7,
             },
             {
                 texto:"Acho que a gravidade da situação é exagerada.",
-                afirmacao:"Na verdade, o aquecimento global é muito preocupante, pois está acelerando eventos climáticos extremos e afetando ecossistemas vitais para a vida na terra."
+                afirmacao: [
+                "Na verdade, o aquecimento global é muito preocupante, pois está acelerando eventos climáticos extremos e afetando ecossistemas vitais para a vida na terra."
+                ],
+                proxima: 7,
             }
         ]
     },
@@ -68,11 +85,15 @@ export const perguntas = [
         alternativas: [
             {
                 texto:"É mais importante focar na proteção dos oceanos.",
-                afirmacao:"Ambos são igualmente importantes, pois os oceanos regulam o clima e produzem oxigênio, enquanto as florestas armazenam carbono e abrigam biodiversidade essencial."
+                afirmacao:[
+                "Ambos são igualmente importantes, pois os oceanos regulam o clima e produzem oxigênio, enquanto as florestas armazenam carbono e abrigam biodiversidade essencial."
+                ],
             },
             {
                 texto:"Melhor focas apenas nas florestas.",
-                afirmacao:"Ambos são igualmente importantes, pois os oceanos regulam o clima e produzem oxigênio, enquanto as florestas armazenam carbono e abrigam biodiversidade essencial."
+                afirmacao:[
+                "Ambos são igualmente importantes, pois os oceanos regulam o clima e produzem oxigênio, enquanto as florestas armazenam carbono e abrigam biodiversidade essencial."
+                ],
             }
             
             
